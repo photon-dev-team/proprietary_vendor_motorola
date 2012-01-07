@@ -1,6 +1,7 @@
 
 # Live wallpaper packages
 PRODUCT_PACKAGES := \
+    Usb \
     LiveWallpapers \
     LiveWallpapersPicker \
     MagicSmokeWallpapers \

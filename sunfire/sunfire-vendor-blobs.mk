@@ -5,6 +5,15 @@ PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/lib/libaudio.so:system/lib/libaudio.so \
     vendor/moto/sunfire/proprietary/lib/libaudiopolicy.so:system/lib/libaudiopolicy.so
 
+# FINGERPRINT
+PRODUCT_COPY_FILES += \
+    vendor/moto/sunfire/proprietary/lib/libAuthUDMDrv_1750A100.so:system/lib/libAuthUDMDrv_1750A100.so \
+    vendor/moto/sunfire/proprietary/lib/libam2app.so:system/lib/libam2app.so \
+    vendor/moto/sunfire/proprietary/lib/libam2server.so:system/lib/libam2server.so \
+    vendor/moto/sunfire/proprietary/bin/am2server:system/bin/am2server \
+    vendor/moto/sunfire/proprietary/app/GfxEngine.apk:system/app/GfxEngine.apk \
+    vendor/moto/sunfire/proprietary/etc/am2server.pubkey:system/etc/am2server.pubkey \
+
 # HAL
 PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/lib/hw/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \
@@ -26,8 +35,8 @@ PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/lib/libhwmediaplugin.so:obj/lib/libhwmediaplugin.so \
     vendor/moto/sunfire/proprietary/lib/libhwmediarecorder.so:system/lib/libhwmediarecorder.so \
     vendor/moto/sunfire/proprietary/lib/libhwmediarecorder.so:obj/lib/libhwmediarecorder.so \
-    vendor/moto/sunfire/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so
-
+    vendor/moto/sunfire/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
+    
 # Bin
 PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/bin/mot_boot_mode:system/bin/mot_boot_mode \
@@ -59,6 +68,9 @@ PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/bin/tund:system/bin/tund \
     vendor/moto/sunfire/proprietary/bin/bt_init:system/bin/bt_init \
     vendor/moto/sunfire/proprietary/bin/bt_downloader:system/bin/bt_downloader \
+    vendor/moto/sunfire/proprietary/bin/sdptool:system/bin/sdptool \
+    vendor/moto/sunfire/proprietary/bin/Hostapd:system/bin/Hostapd \
+    vendor/moto/sunfire/proprietary/bin/remountpds:system/bin/remountpds \
     vendor/moto/sunfire/proprietary/bin/battd:system/bin/battd \
     vendor/moto/sunfire/proprietary/bin/usbd:system/bin/usbd \
     vendor/moto/sunfire/proprietary/bin/whisperd:system/bin/whisperd \
@@ -130,10 +142,9 @@ PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/etc/be_photo:system/etc/be_photo \
     vendor/moto/sunfire/proprietary/usr/idc/qtouch-touchscreen.idc:system/usr/idc/qtouch-touchscreen.idc \
     vendor/moto/sunfire/proprietary/app/FastDormancy.apk:system/app/FastDormancy.apk \
+    vendor/moto/sunfire/proprietary/app/Usb.apk:system/app/Usb.apk \
     vendor/moto/sunfire/proprietary/app/AudioEffectSettings.apk:system/app/AudioEffectSettings.apk \
     vendor/moto/sunfire/proprietary/app/FaceLock.apk:system/app/FaceLock.apk \
-    vendor/moto/sunfire/proprietary/app/FileManager.apk:system/app/FileManager.apk \
-    vendor/moto/sunfire/proprietary/app/Usb.apk:system/app/Usb.apk \
     vendor/moto/sunfire/proprietary/etc/ppp/peers/pppd-ril.options:system/etc/ppp/peers/pppd-ril.options
 
 # system libs
@@ -182,8 +193,29 @@ PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/lib/libmoto_ril.so:system/lib/libmoto_ril.so \
     vendor/moto/sunfire/proprietary/lib/librds_util.so:system/lib/librds_util.so \
     vendor/moto/sunfire/proprietary/lib/libnmea.so:system/lib/libnmea.so \
+    vendor/moto/sunfire/proprietary/lib/liba2dp.so:system/lib/liba2dp.so \
     vendor/moto/sunfire/proprietary/lib/libbattd.so:system/lib/libbattd.so \
     vendor/moto/sunfire/proprietary/lib/libnvrm_channel.so:system/lib/libnvrm_channel.so
+
+# VIDEO
+PRODUCT_COPY_FILES += \
+    vendor/moto/sunfire/proprietary/lib/libnvomx.so:system/lib/libnvomx.so \
+    vendor/moto/sunfire/proprietary/lib/libnvomxilclient.so:system/lib/libnvomxilclient.so \
+    vendor/moto/sunfire/proprietary/lib/libomx_aacdec_sharedlibrary.so:system/lib/libomx_aacdec_sharedlibrary.so \
+    vendor/moto/sunfire/proprietary/lib/libomx_amrdec_sharedlibrary.so:system/lib/libomx_amrdec_sharedlibrary.so \
+    vendor/moto/sunfire/proprietary/lib/libomx_avcdec_sharedlibrary.so:system/lib/libomx_avcdec_sharedlibrary.so \
+    vendor/moto/sunfire/proprietary/lib/libomx_m4vdec_sharedlibrary.so:system/lib/libomx_m4vdec_sharedlibrary.so \
+    vendor/moto/sunfire/proprietary/lib/libomx_mp3dec_sharedlibrary.so:system/lib/libomx_mp3dec_sharedlibrary.so \
+    vendor/moto/sunfire/proprietary/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so
+    
+
+# HDMI
+PRODUCT_COPY_FILES += \
+    vendor/moto/sunfire/proprietary/framework/com.motorola.android.iextdispservice.jar:system/framework/com.motorola.android.iextdispservice.jar \
+    vendor/moto/sunfire/proprietary/framework/com.motorola.android.imirrorservice.jar:system/framework/com.motorola.android.imirrorservice.jar \
+    vendor/moto/sunfire/proprietary/lib/libmirrorjni.so:system/lib/libmirrorjni.so \
+    vendor/moto/sunfire/proprietary/app/ExtDispService.apk:system/app/ExtDispService.apk \
+    vendor/moto/sunfire/proprietary/app/MirrorService.apk:system/app/MirrorService.apk
 
 # LP ADD ------------------------------------------------------------------------------------
 
@@ -223,23 +255,3 @@ vendor/moto/sunfire/proprietary/lib/libopencore_rtspreg.so:system/lib/libopencor
 vendor/moto/sunfire/proprietary/lib/libpixelflinger.so:system/lib/libpixelflinger.so
 
 #-----------------------------------------------------------------------------------------------------
-
-# VIDEO
-PRODUCT_COPY_FILES += \
-    vendor/moto/sunfire/proprietary/lib/libnvomx.so:system/lib/libnvomx.so \
-    vendor/moto/sunfire/proprietary/lib/libnvomxilclient.so:system/lib/libnvomxilclient.so \
-    vendor/moto/sunfire/proprietary/lib/libomx_aacdec_sharedlibrary.so:system/lib/libomx_aacdec_sharedlibrary.so \
-    vendor/moto/sunfire/proprietary/lib/libomx_amrdec_sharedlibrary.so:system/lib/libomx_amrdec_sharedlibrary.so \
-    vendor/moto/sunfire/proprietary/lib/libomx_avcdec_sharedlibrary.so:system/lib/libomx_avcdec_sharedlibrary.so \
-    vendor/moto/sunfire/proprietary/lib/libomx_m4vdec_sharedlibrary.so:system/lib/libomx_m4vdec_sharedlibrary.so \
-    vendor/moto/sunfire/proprietary/lib/libomx_mp3dec_sharedlibrary.so:system/lib/libomx_mp3dec_sharedlibrary.so \
-    vendor/moto/sunfire/proprietary/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so
-
-# HDMI
-PRODUCT_COPY_FILES += \
-    vendor/moto/sunfire/proprietary/framework/com.motorola.android.iextdispservice.jar:system/framework/com.motorola.android.iextdispservice.jar \
-    vendor/moto/sunfire/proprietary/framework/com.motorola.android.imirrorservice.jar:system/framework/com.motorola.android.imirrorservice.jar \
-    vendor/moto/sunfire/proprietary/lib/libmirrorjni.so:system/lib/libmirrorjni.so \
-    vendor/moto/sunfire/proprietary/app/ExtDispService.apk:system/app/ExtDispService.apk \
-    vendor/moto/sunfire/proprietary/app/MirrorService.apk:system/app/MirrorService.apk
-
