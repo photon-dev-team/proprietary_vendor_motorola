@@ -4,6 +4,7 @@ PRODUCT_PACKAGES := \
     LiveWallpapers \
     LiveWallpapersPicker \
     MagicSmokeWallpapers \
+    FileManager \
     VisualizationWallpapers \
     librs_jni
 

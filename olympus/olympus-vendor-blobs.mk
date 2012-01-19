@@ -101,7 +101,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/etc/touchpad/22/touchpad.cfg:system/etc/touchpad/22/touchpad.cfg \
     vendor/moto/olympus/proprietary/etc/bt_init.config:system/etc/bt_init.config \
     vendor/moto/olympus/proprietary/app/FastDormancy.apk:system/app/FastDormancy.apk \
-    vendor/moto/sunfire/proprietary/app/Usb.apk:system/app/Usb.apk \
+    vendor/moto/olympus/proprietary/app/Usb.apk:system/app/Usb.apk \
     vendor/moto/olympus/proprietary/app/AudioEffectSettings.apk:system/app/AudioEffectSettings.apk \
     vendor/moto/olympus/proprietary/etc/ppp/peers/pppd-ril.options:system/etc/ppp/peers/pppd-ril.options
 
@@ -173,8 +173,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/lib/libmirrorjni.so:system/lib/libmirrorjni.so \
     vendor/moto/olympus/proprietary/etc/permissions/com.motorola.android.iextdispservice.xml:system/etc/permissions/com.motorola.android.iextdispservice.xml \
     vendor/moto/olympus/proprietary/etc/permissions/com.motorola.android.imirrorservice.xml:system/etc/permissions/com.motorola.android.imirrorservice.xml \
-    vendor/moto/olympus/proprietary/app/ExtDispService.apk:system/app/ExtDispService.apk \
-    vendor/moto/olympus/proprietary/app/MirrorService.apk:system/app/MirrorService.apk
+    vendor/moto/olympus/proprietary/app/FileManager.apk:system/app/FileManager.apk
 
 # LP ADD ------------------------------------------------------------------------------------
 

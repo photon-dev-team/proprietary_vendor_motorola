@@ -220,8 +220,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/lib/libmirrorjni.so:system/lib/libmirrorjni.so \
     vendor/moto/sunfire/proprietary/etc/permissions/com.motorola.android.iextdispservice.xml:system/etc/permissions/com.motorola.android.iextdispservice.xml \
     vendor/moto/sunfire/proprietary/etc/permissions/com.motorola.android.imirrorservice.xml:system/etc/permissions/com.motorola.android.imirrorservice.xml \
-    vendor/moto/sunfire/proprietary/app/ExtDispService.apk:system/app/ExtDispService.apk \
-    vendor/moto/sunfire/proprietary/app/MirrorService.apk:system/app/MirrorService.apk
+    vendor/moto/sunfire/proprietary/app/FileManager.apk:system/app/FileManager2.apk
 
 # LP ADD ------------------------------------------------------------------------------------
 
