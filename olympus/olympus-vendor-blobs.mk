@@ -173,7 +173,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/lib/libmirrorjni.so:system/lib/libmirrorjni.so \
     vendor/moto/olympus/proprietary/etc/permissions/com.motorola.android.iextdispservice.xml:system/etc/permissions/com.motorola.android.iextdispservice.xml \
     vendor/moto/olympus/proprietary/etc/permissions/com.motorola.android.imirrorservice.xml:system/etc/permissions/com.motorola.android.imirrorservice.xml \
-    vendor/moto/olympus/proprietary/app/FileManager.apk:system/app/FileManager.apk
+    vendor/moto/olympus/proprietary/app/FileManager.apk:system/app/FileManager2.apk
 
 # LP ADD ------------------------------------------------------------------------------------
 
