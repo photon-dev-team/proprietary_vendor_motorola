@@ -7,15 +7,15 @@ PRODUCT_COPY_FILES += \
 
 # FINGERPRINT
 PRODUCT_COPY_FILES += \
-    vendor/moto/olympus/proprietary/lib/libAuthUDMDrv_1750A100.so:system/lib/libAuthUDMDrv_1750A100.so \
-    vendor/moto/olympus/proprietary/lib/libam2app.so:system/lib/libam2app.so \
-    vendor/moto/olympus/proprietary/lib/libam2server.so:system/lib/libam2server.so \
-    vendor/moto/olympus/proprietary/bin/am2server:system/bin/am2server \
-    vendor/moto/olympus/proprietary/app/GfxEngine.apk:system/app/GfxEngine.apk \
-    vendor/moto/olympus/proprietary/app/FingerprintSensor.apk:system/app/FingerprintSensor.apk \
-    vendor/moto/olympus/proprietary/etc/am2server.pubkey:system/etc/am2server.pubkey \
-    vendor/moto/olympus/proprietary/etc/tsm.xml:system/etc/tsm.xml \
-    vendor/moto/olympus/proprietary/app/am2app.jar:system/framework/am2app.jar
+#    vendor/moto/olympus/proprietary/lib/libAuthUDMDrv_1750A100.so:system/lib/libAuthUDMDrv_1750A100.so \
+#    vendor/moto/olympus/proprietary/lib/libam2app.so:system/lib/libam2app.so \
+#    vendor/moto/olympus/proprietary/lib/libam2server.so:system/lib/libam2server.so \
+#    vendor/moto/olympus/proprietary/bin/am2server:system/bin/am2server \
+#    vendor/moto/olympus/proprietary/app/GfxEngine.apk:system/app/GfxEngine.apk \
+#    vendor/moto/olympus/proprietary/app/FingerprintSensor.apk:system/app/FingerprintSensor.apk \
+#    vendor/moto/olympus/proprietary/etc/am2server.pubkey:system/etc/am2server.pubkey \
+#    vendor/moto/olympus/proprietary/etc/tsm.xml:system/etc/tsm.xml \
+#    vendor/moto/olympus/proprietary/app/am2app.jar:system/framework/am2app.jar
 
 # HAL
 PRODUCT_COPY_FILES += \
@@ -23,6 +23,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/lib/hw/overlay.tegra.so:system/lib/hw/overlay.tegra.so \
     vendor/moto/olympus/proprietary/lib/hw/sensors.olympus.so:system/lib/hw/sensors.olympus.so \
     vendor/moto/olympus/proprietary/lib/hw/gps.olympus.so:system/lib/hw/gps.olympus.so \
+    vendor/moto/sunfire/proprietary/lib/hw/camera.stingray.so:system/lib/hw/camera.olympus.so \
     vendor/moto/olympus/proprietary/lib/hw/lights.tegra.so:system/lib/hw/lights.tegra.so
 
 # EGL
@@ -100,6 +101,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/etc/touchpad/22/touchpad.cfg:system/etc/touchpad/22/touchpad.cfg \
     vendor/moto/olympus/proprietary/etc/bt_init.config:system/etc/bt_init.config \
     vendor/moto/olympus/proprietary/app/FastDormancy.apk:system/app/FastDormancy.apk \
+    vendor/moto/olympus/proprietary/app/Usb.apk:system/app/Usb.apk \
     vendor/moto/olympus/proprietary/app/AudioEffectSettings.apk:system/app/AudioEffectSettings.apk \
     vendor/moto/olympus/proprietary/etc/ppp/peers/pppd-ril.options:system/etc/ppp/peers/pppd-ril.options
 
@@ -171,6 +173,43 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/lib/libmirrorjni.so:system/lib/libmirrorjni.so \
     vendor/moto/olympus/proprietary/etc/permissions/com.motorola.android.iextdispservice.xml:system/etc/permissions/com.motorola.android.iextdispservice.xml \
     vendor/moto/olympus/proprietary/etc/permissions/com.motorola.android.imirrorservice.xml:system/etc/permissions/com.motorola.android.imirrorservice.xml \
-    vendor/moto/olympus/proprietary/app/ExtDispService.apk:system/app/ExtDispService.apk \
-    vendor/moto/olympus/proprietary/app/MirrorService.apk:system/app/MirrorService.apk
+    vendor/moto/olympus/proprietary/app/FileManager.apk:system/app/FileManager2.apk
 
+# LP ADD ------------------------------------------------------------------------------------
+
+# LP Added
+
+# BIN 
+
+PRODUCT_COPY_FILES += \
+vendor/moto/sunfire/proprietary/bin/fmradioserver:system/bin/fmradioserver \
+vendor/moto/sunfire/proprietary/bin/memtest_mode:system/bin/memtest_mode \
+vendor/moto/sunfire/proprietary/bin/nv_hciattach:system/bin/nv_hciattach \
+vendor/moto/sunfire/proprietary/bin/nvmm_wmaprodec.axf:system/bin/nvmm_wmaprodec.axf \
+vendor/moto/sunfire/proprietary/bin/remountpds:system/bin/remountpds \
+vendor/moto/sunfire/proprietary/bin/slateipcd:system/bin/slateipcd \
+vendor/moto/sunfire/proprietary/bin/tcmd:system/bin/tcmd \
+vendor/moto/sunfire/proprietary/bin/tegrastats:system/bin/tegrastats \
+vendor/moto/sunfire/proprietary/bin/vpnclientpm:system/bin/vpnclientpm
+
+# LIB
+PRODUCT_COPY_FILES += \
+vendor/moto/sunfire/proprietary/lib/libfmradio_jni.so:system/lib/libfmradio_jni.so \
+vendor/moto/sunfire/proprietary/lib/libfmradioplayer.so:system/lib/libfmradioplayer.so \
+vendor/moto/sunfire/proprietary/lib/libnvidia_display_jni.so:system/lib/libnvidia_display_jni.so \
+vendor/moto/sunfire/proprietary/lib/libnvec.so:system/lib/libnvec.so \
+vendor/moto/sunfire/proprietary/lib/libnvwinsys.so:system/lib/libnvwinsys.so \
+vendor/moto/sunfire/proprietary/lib/libomx_amrenc_sharedlibrary.so:system/lib/libomx_amrenc_sharedlibrary.so \
+vendor/moto/sunfire/proprietary/lib/libopencore_author.so:system/lib/libopencore_author.so \
+vendor/moto/sunfire/proprietary/lib/libopencore_common.so:system/lib/libopencore_common.so \
+vendor/moto/sunfire/proprietary/lib/libopencore_download.so:system/lib/libopencore_download.so \
+vendor/moto/sunfire/proprietary/lib/libopencore_downloadreg.so:system/lib/libopencore_downloadreg.so \
+vendor/moto/sunfire/proprietary/lib/libopencore_mp4local.so:system/lib/libopencore_mp4local.so \
+vendor/moto/sunfire/proprietary/lib/libopencore_mp4localreg.so:system/lib/libopencore_mp4localreg.so \
+vendor/moto/sunfire/proprietary/lib/libopencore_net_support.so:system/lib/libopencore_net_support.so \
+vendor/moto/sunfire/proprietary/lib/libopencore_player.so:system/lib/libopencore_player.so \
+vendor/moto/sunfire/proprietary/lib/libopencore_rtsp.so:system/lib/libopencore_rtsp.so \
+vendor/moto/sunfire/proprietary/lib/libopencore_rtspreg.so:system/lib/libopencore_rtspreg.so \
+vendor/moto/sunfire/proprietary/lib/libpixelflinger.so:system/lib/libpixelflinger.so
+
+#-----------------------------------------------------------------------------------------------------

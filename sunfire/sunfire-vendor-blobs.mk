@@ -162,6 +162,8 @@ PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/lib/libnvmm_manager.so:system/lib/libnvmm_manager.so \
     vendor/moto/sunfire/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
     vendor/moto/sunfire/proprietary/lib/libcamera.so:system/lib/libcamera.so \
+    vendor/moto/sunfire/proprietary/lib/liboemcamera.so:obj/lib/libcamera.so \
+    vendor/moto/sunfire/proprietary/lib/liboemcamera.so:system/lib/libcamera.so \
     vendor/moto/sunfire/proprietary/lib/libnvodm_imager.so:system/lib/libnvodm_imager.so \
     vendor/moto/sunfire/proprietary/lib/libnvddk_2d.so:system/lib/libnvddk_2d.so \
     vendor/moto/sunfire/proprietary/lib/libnvmm_utils.so:system/lib/libnvmm_utils.so \
