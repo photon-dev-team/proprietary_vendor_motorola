@@ -7,12 +7,12 @@ PRODUCT_COPY_FILES += \
 
 # FINGERPRINT
 PRODUCT_COPY_FILES += \
-    vendor/moto/sunfire/proprietary/lib/libAuthUDMDrv_1750A100.so:system/lib/libAuthUDMDrv_1750A100.so \
-    vendor/moto/sunfire/proprietary/lib/libam2app.so:system/lib/libam2app.so \
-    vendor/moto/sunfire/proprietary/lib/libam2server.so:system/lib/libam2server.so \
-    vendor/moto/sunfire/proprietary/bin/am2server:system/bin/am2server \
-    vendor/moto/sunfire/proprietary/app/GfxEngine.apk:system/app/GfxEngine.apk \
-    vendor/moto/sunfire/proprietary/etc/am2server.pubkey:system/etc/am2server.pubkey \
+#    vendor/moto/sunfire/proprietary/lib/libAuthUDMDrv_1750A100.so:system/lib/libAuthUDMDrv_1750A100.so \
+#    vendor/moto/sunfire/proprietary/lib/libam2app.so:system/lib/libam2app.so \
+#    vendor/moto/sunfire/proprietary/lib/libam2server.so:system/lib/libam2server.so \
+#    vendor/moto/sunfire/proprietary/bin/am2server:system/bin/am2server \
+#    vendor/moto/sunfire/proprietary/app/GfxEngine.apk:system/app/GfxEngine.apk \
+#    vendor/moto/sunfire/proprietary/etc/am2server.pubkey:system/etc/am2server.pubkey \
 
 # HAL
 PRODUCT_COPY_FILES += \
@@ -20,6 +20,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/lib/hw/overlay.tegra.so:system/lib/hw/overlay.tegra.so \
     vendor/moto/sunfire/proprietary/lib/hw/sensors.sunfire.so:system/lib/hw/sensors.sunfire.so \
     vendor/moto/sunfire/proprietary/lib/hw/gps.sunfire.so:system/lib/hw/gps.sunfire.so \
+    vendor/moto/sunfire/proprietary/lib/hw/camera.stingray.so:system/lib/hw/camera.sunfire.so \
     vendor/moto/sunfire/proprietary/lib/hw/lights.tegra.so:system/lib/hw/lights.tegra.so
 
 # EGL
@@ -161,6 +162,8 @@ PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/lib/libnvmm_manager.so:system/lib/libnvmm_manager.so \
     vendor/moto/sunfire/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
     vendor/moto/sunfire/proprietary/lib/libcamera.so:system/lib/libcamera.so \
+    vendor/moto/sunfire/proprietary/lib/liboemcamera.so:obj/lib/libcamera.so \
+    vendor/moto/sunfire/proprietary/lib/liboemcamera.so:system/lib/libcamera.so \
     vendor/moto/sunfire/proprietary/lib/libnvodm_imager.so:system/lib/libnvodm_imager.so \
     vendor/moto/sunfire/proprietary/lib/libnvddk_2d.so:system/lib/libnvddk_2d.so \
     vendor/moto/sunfire/proprietary/lib/libnvmm_utils.so:system/lib/libnvmm_utils.so \
@@ -217,8 +220,9 @@ PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/framework/com.motorola.android.iextdispservice.jar:system/framework/com.motorola.android.iextdispservice.jar \
     vendor/moto/sunfire/proprietary/framework/com.motorola.android.imirrorservice.jar:system/framework/com.motorola.android.imirrorservice.jar \
     vendor/moto/sunfire/proprietary/lib/libmirrorjni.so:system/lib/libmirrorjni.so \
-    vendor/moto/sunfire/proprietary/app/ExtDispService.apk:system/app/ExtDispService.apk \
-    vendor/moto/sunfire/proprietary/app/MirrorService.apk:system/app/MirrorService.apk
+    vendor/moto/sunfire/proprietary/etc/permissions/com.motorola.android.iextdispservice.xml:system/etc/permissions/com.motorola.android.iextdispservice.xml \
+    vendor/moto/sunfire/proprietary/etc/permissions/com.motorola.android.imirrorservice.xml:system/etc/permissions/com.motorola.android.imirrorservice.xml \
+    vendor/moto/sunfire/proprietary/app/FileManager.apk:system/app/FileManager2.apk
 
 # LP ADD ------------------------------------------------------------------------------------
 

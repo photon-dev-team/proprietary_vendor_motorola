@@ -192,6 +192,9 @@ vendor/moto/sunfire/proprietary/bin/remountpds:system/bin/remountpds \
 vendor/moto/sunfire/proprietary/bin/slateipcd:system/bin/slateipcd \
 vendor/moto/sunfire/proprietary/bin/tcmd:system/bin/tcmd \
 vendor/moto/sunfire/proprietary/bin/tegrastats:system/bin/tegrastats \
+vendor/moto/sunfire/proprietary/bin/hciconfig:system/bin/hciconfig \
+vendor/moto/sunfire/proprietary/bin/hcidump:system/bin/hcidump \
+vendor/moto/sunfire/proprietary/bin/hcitool:system/bin/hcitool \
 vendor/moto/sunfire/proprietary/bin/vpnclientpm:system/bin/vpnclientpm
 
 # LIB

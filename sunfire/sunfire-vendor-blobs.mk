@@ -87,6 +87,9 @@ PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/bin/pppd-ril:system/bin/pppd-ril \
     vendor/moto/sunfire/proprietary/bin/chat-ril:system/bin/chat-ril \
     vendor/moto/sunfire/proprietary/bin/ftmipcd:system/bin/ftmipcd \
+    vendor/moto/sunfire/proprietary/bin/hciconfig:system/bin/hciconfig \
+    vendor/moto/sunfire/proprietary/bin/hcidump:system/bin/hcidump \
+    vendor/moto/sunfire/proprietary/bin/hcitool:system/bin/hcitool \
     vendor/moto/sunfire/proprietary/bin/touchpad:system/bin/touchpad
 
 # LP ADD ------------------------------------------------------------------------------------
