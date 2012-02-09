@@ -20,7 +20,6 @@ PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/lib/hw/overlay.tegra.so:system/lib/hw/overlay.tegra.so \
     vendor/moto/sunfire/proprietary/lib/hw/sensors.sunfire.so:system/lib/hw/sensors.sunfire.so \
     vendor/moto/sunfire/proprietary/lib/hw/gps.sunfire.so:system/lib/hw/gps.sunfire.so \
-    vendor/moto/sunfire/proprietary/lib/hw/camera.stingray.so:system/lib/hw/camera.sunfire.so \
     vendor/moto/sunfire/proprietary/lib/hw/lights.tegra.so:system/lib/hw/lights.tegra.so
 
 # EGL

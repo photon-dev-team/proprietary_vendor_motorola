@@ -23,7 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/lib/hw/overlay.tegra.so:system/lib/hw/overlay.tegra.so \
     vendor/moto/olympus/proprietary/lib/hw/sensors.olympus.so:system/lib/hw/sensors.olympus.so \
     vendor/moto/olympus/proprietary/lib/hw/gps.olympus.so:system/lib/hw/gps.olympus.so \
-    vendor/moto/sunfire/proprietary/lib/hw/camera.stingray.so:system/lib/hw/camera.olympus.so \
     vendor/moto/olympus/proprietary/lib/hw/lights.tegra.so:system/lib/hw/lights.tegra.so
 
 # EGL
@@ -101,7 +100,6 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/etc/touchpad/22/touchpad.cfg:system/etc/touchpad/22/touchpad.cfg \
     vendor/moto/olympus/proprietary/etc/bt_init.config:system/etc/bt_init.config \
     vendor/moto/olympus/proprietary/app/FastDormancy.apk:system/app/FastDormancy.apk \
-    vendor/moto/olympus/proprietary/app/Usb.apk:system/app/Usb.apk \
     vendor/moto/olympus/proprietary/app/AudioEffectSettings.apk:system/app/AudioEffectSettings.apk \
     vendor/moto/olympus/proprietary/etc/ppp/peers/pppd-ril.options:system/etc/ppp/peers/pppd-ril.options
 
@@ -113,12 +111,11 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/lib/libnvwsi.so:system/lib/libnvwsi.so \
     vendor/moto/olympus/proprietary/lib/libnvddk_2d_v2.so:system/lib/libnvddk_2d_v2.so \
     vendor/moto/olympus/proprietary/lib/libnvrm.so:system/lib/libnvrm.so \
+    vendor/moto/olympus/proprietary/lib/libnvmm_camera.so:obj/lib/libnvmm_camera.so \
     vendor/moto/olympus/proprietary/lib/libnvmm_camera.so:system/lib/libnvmm_camera.so \
     vendor/moto/olympus/proprietary/lib/libnvmm_manager.so:system/lib/libnvmm_manager.so \
     vendor/moto/olympus/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
     vendor/moto/olympus/proprietary/lib/libcamera.so:system/lib/libcamera.so \
-    vendor/moto/olympus/proprietary/lib/liboemcamera.so:obj/lib/libcamera.so \
-    vendor/moto/olympus/proprietary/lib/liboemcamera.so:system/lib/libcamera.so \
     vendor/moto/olympus/proprietary/lib/libnvodm_imager.so:system/lib/libnvodm_imager.so \
     vendor/moto/olympus/proprietary/lib/libnvddk_2d.so:system/lib/libnvddk_2d.so \
     vendor/moto/olympus/proprietary/lib/libnvmm_utils.so:system/lib/libnvmm_utils.so \
