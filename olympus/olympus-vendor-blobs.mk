@@ -91,7 +91,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/etc/wl/sdio-ag-cdc-11n-mfgtest-roml-seqcmds.bin:system/etc/wl/sdio-ag-cdc-11n-mfgtest-roml-seqcmds.bin \
     vendor/moto/olympus/proprietary/etc/wl/sdio-ag-cdc-full11n-minioctl-roml-pno-wme-aoe-pktfilter-keepalive.bin:system/etc/wl/sdio-ag-cdc-full11n-minioctl-roml-pno-wme-aoe-pktfilter-keepalive.bin \
     vendor/moto/olympus/proprietary/etc/wl/sdio-g-cdc-roml-reclaim-wme-apsta-idauth-minioctl.bin:system/etc/wl/sdio-g-cdc-roml-reclaim-wme-apsta-idauth-minioctl.bin \
-    vendor/moto/olympus/proprietary/etc/BCM4329B1_002.002.023.0757.07822.hcd:system/etc/BCM4329B1_002.002.023.0757.0782.hcd
+    vendor/moto/olympus/proprietary/etc/BCM4329B1_002.002.023.0757.0782.hcd:system/etc/BCM4329B1_002.002.023.0757.0782.hcd
 
 # subsystem configurations
 PRODUCT_COPY_FILES += \
