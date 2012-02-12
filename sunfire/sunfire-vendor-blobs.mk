@@ -38,7 +38,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/lib/libhwmediaplugin.so:obj/lib/libhwmediaplugin.so \
     vendor/moto/sunfire/proprietary/lib/libhwmediarecorder.so:system/lib/libhwmediarecorder.so \
     vendor/moto/sunfire/proprietary/lib/libhwmediarecorder.so:obj/lib/libhwmediarecorder.so \
-    vendor/moto/sunfire/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
+    vendor/moto/sunfire/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so
     
 # Bin
 PRODUCT_COPY_FILES += \
@@ -86,9 +86,6 @@ PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/bin/pppd-ril:system/bin/pppd-ril \
     vendor/moto/sunfire/proprietary/bin/chat-ril:system/bin/chat-ril \
     vendor/moto/sunfire/proprietary/bin/ftmipcd:system/bin/ftmipcd \
-    vendor/moto/sunfire/proprietary/bin/hciconfig:system/bin/hciconfig \
-    vendor/moto/sunfire/proprietary/bin/hcidump:system/bin/hcidump \
-    vendor/moto/sunfire/proprietary/bin/hcitool:system/bin/hcitool \
     vendor/moto/sunfire/proprietary/bin/touchpad:system/bin/touchpad
 
 # LP ADD ------------------------------------------------------------------------------------
@@ -164,8 +161,6 @@ PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/lib/libnvmm_manager.so:system/lib/libnvmm_manager.so \
     vendor/moto/sunfire/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
     vendor/moto/sunfire/proprietary/lib/libcamera.so:system/lib/libcamera.so \
-    vendor/moto/sunfire/proprietary/lib/liboemcamera.so:obj/lib/libcamera.so \
-    vendor/moto/sunfire/proprietary/lib/liboemcamera.so:system/lib/libcamera.so \
     vendor/moto/sunfire/proprietary/lib/libnvodm_imager.so:system/lib/libnvodm_imager.so \
     vendor/moto/sunfire/proprietary/lib/libnvddk_2d.so:system/lib/libnvddk_2d.so \
     vendor/moto/sunfire/proprietary/lib/libnvmm_utils.so:system/lib/libnvmm_utils.so \
@@ -219,11 +214,7 @@ PRODUCT_COPY_FILES += \
 
 # HDMI
 PRODUCT_COPY_FILES += \
-    vendor/moto/sunfire/proprietary/framework/com.motorola.android.iextdispservice.jar:system/framework/com.motorola.android.iextdispservice.jar \
-    vendor/moto/sunfire/proprietary/framework/com.motorola.android.imirrorservice.jar:system/framework/com.motorola.android.imirrorservice.jar \
     vendor/moto/sunfire/proprietary/lib/libmirrorjni.so:system/lib/libmirrorjni.so \
-    vendor/moto/sunfire/proprietary/etc/permissions/com.motorola.android.iextdispservice.xml:system/etc/permissions/com.motorola.android.iextdispservice.xml \
-    vendor/moto/sunfire/proprietary/etc/permissions/com.motorola.android.imirrorservice.xml:system/etc/permissions/com.motorola.android.imirrorservice.xml \
     vendor/moto/sunfire/proprietary/app/FileManager.apk:system/app/FileManager2.apk
 
 # LP ADD ------------------------------------------------------------------------------------
@@ -235,7 +226,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 vendor/moto/sunfire/proprietary/bin/fmradioserver:system/bin/fmradioserver \
 vendor/moto/sunfire/proprietary/bin/memtest_mode:system/bin/memtest_mode \
-vendor/moto/sunfire/proprietary/bin/nv_hciattach:system/bin/nv_hciattach \
 vendor/moto/sunfire/proprietary/bin/nvmm_wmaprodec.axf:system/bin/nvmm_wmaprodec.axf \
 vendor/moto/sunfire/proprietary/bin/remountpds:system/bin/remountpds \
 vendor/moto/sunfire/proprietary/bin/slateipcd:system/bin/slateipcd \

@@ -7,15 +7,15 @@ PRODUCT_COPY_FILES += \
 
 # FINGERPRINT
 PRODUCT_COPY_FILES += \
-#    vendor/moto/olympus/proprietary/lib/libAuthUDMDrv_1750A100.so:system/lib/libAuthUDMDrv_1750A100.so \
-#    vendor/moto/olympus/proprietary/lib/libam2app.so:system/lib/libam2app.so \
-#    vendor/moto/olympus/proprietary/lib/libam2server.so:system/lib/libam2server.so \
-#    vendor/moto/olympus/proprietary/bin/am2server:system/bin/am2server \
-#    vendor/moto/olympus/proprietary/app/GfxEngine.apk:system/app/GfxEngine.apk \
-#    vendor/moto/olympus/proprietary/app/FingerprintSensor.apk:system/app/FingerprintSensor.apk \
-#    vendor/moto/olympus/proprietary/etc/am2server.pubkey:system/etc/am2server.pubkey \
-#    vendor/moto/olympus/proprietary/etc/tsm.xml:system/etc/tsm.xml \
-#    vendor/moto/olympus/proprietary/app/am2app.jar:system/framework/am2app.jar
+    vendor/moto/olympus/proprietary/lib/libAuthUDMDrv_1750A100.so:system/lib/libAuthUDMDrv_1750A100.so \
+    vendor/moto/olympus/proprietary/lib/libam2app.so:system/lib/libam2app.so \
+    vendor/moto/olympus/proprietary/lib/libam2server.so:system/lib/libam2server.so \
+    vendor/moto/olympus/proprietary/bin/am2server:system/bin/am2server \
+    vendor/moto/olympus/proprietary/app/GfxEngine.apk:system/app/GfxEngine.apk \
+    vendor/moto/olympus/proprietary/app/FingerprintSensor.apk:system/app/FingerprintSensor.apk \
+    vendor/moto/olympus/proprietary/etc/am2server.pubkey:system/etc/am2server.pubkey \
+    vendor/moto/olympus/proprietary/etc/tsm.xml:system/etc/tsm.xml \
+    vendor/moto/olympus/proprietary/app/am2app.jar:system/framework/am2app.jar
 
 # HAL
 PRODUCT_COPY_FILES += \
@@ -91,7 +91,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/etc/wl/sdio-ag-cdc-11n-mfgtest-roml-seqcmds.bin:system/etc/wl/sdio-ag-cdc-11n-mfgtest-roml-seqcmds.bin \
     vendor/moto/olympus/proprietary/etc/wl/sdio-ag-cdc-full11n-minioctl-roml-pno-wme-aoe-pktfilter-keepalive.bin:system/etc/wl/sdio-ag-cdc-full11n-minioctl-roml-pno-wme-aoe-pktfilter-keepalive.bin \
     vendor/moto/olympus/proprietary/etc/wl/sdio-g-cdc-roml-reclaim-wme-apsta-idauth-minioctl.bin:system/etc/wl/sdio-g-cdc-roml-reclaim-wme-apsta-idauth-minioctl.bin \
-    vendor/moto/olympus/proprietary/etc/BCM4329B1_002.002.023.0757.0780.hcd:system/etc/BCM4329B1_002.002.023.0757.0780.hcd
+    vendor/moto/olympus/proprietary/etc/BCM4329B1_002.002.023.0757.07822.hcd:system/etc/BCM4329B1_002.002.023.0757.0782.hcd
 
 # subsystem configurations
 PRODUCT_COPY_FILES += \
@@ -101,7 +101,8 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/etc/bt_init.config:system/etc/bt_init.config \
     vendor/moto/olympus/proprietary/app/FastDormancy.apk:system/app/FastDormancy.apk \
     vendor/moto/olympus/proprietary/app/AudioEffectSettings.apk:system/app/AudioEffectSettings.apk \
-    vendor/moto/olympus/proprietary/etc/ppp/peers/pppd-ril.options:system/etc/ppp/peers/pppd-ril.options
+    vendor/moto/olympus/proprietary/etc/ppp/peers/pppd-ril.options:system/etc/ppp/peers/pppd-ril.options \
+    vendor/moto/olympus/proprietary/app/FaceLock.apk:system/app/FaceLock.apk 
 
 # system libs
 PRODUCT_COPY_FILES += \
@@ -111,7 +112,6 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/lib/libnvwsi.so:system/lib/libnvwsi.so \
     vendor/moto/olympus/proprietary/lib/libnvddk_2d_v2.so:system/lib/libnvddk_2d_v2.so \
     vendor/moto/olympus/proprietary/lib/libnvrm.so:system/lib/libnvrm.so \
-    vendor/moto/olympus/proprietary/lib/libnvmm_camera.so:obj/lib/libnvmm_camera.so \
     vendor/moto/olympus/proprietary/lib/libnvmm_camera.so:system/lib/libnvmm_camera.so \
     vendor/moto/olympus/proprietary/lib/libnvmm_manager.so:system/lib/libnvmm_manager.so \
     vendor/moto/olympus/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
@@ -167,11 +167,7 @@ PRODUCT_COPY_FILES += \
 
 # HDMI
 PRODUCT_COPY_FILES += \
-    vendor/moto/olympus/proprietary/framework/com.motorola.android.iextdispservice.jar:system/framework/com.motorola.android.iextdispservice.jar \
-    vendor/moto/olympus/proprietary/framework/com.motorola.android.imirrorservice.jar:system/framework/com.motorola.android.imirrorservice.jar \
     vendor/moto/olympus/proprietary/lib/libmirrorjni.so:system/lib/libmirrorjni.so \
-    vendor/moto/olympus/proprietary/etc/permissions/com.motorola.android.iextdispservice.xml:system/etc/permissions/com.motorola.android.iextdispservice.xml \
-    vendor/moto/olympus/proprietary/etc/permissions/com.motorola.android.imirrorservice.xml:system/etc/permissions/com.motorola.android.imirrorservice.xml \
     vendor/moto/olympus/proprietary/app/FileManager.apk:system/app/FileManager2.apk
 
 # LP ADD ------------------------------------------------------------------------------------
@@ -181,22 +177,16 @@ PRODUCT_COPY_FILES += \
 # BIN 
 
 PRODUCT_COPY_FILES += \
-vendor/moto/sunfire/proprietary/bin/fmradioserver:system/bin/fmradioserver \
 vendor/moto/sunfire/proprietary/bin/memtest_mode:system/bin/memtest_mode \
-vendor/moto/sunfire/proprietary/bin/nv_hciattach:system/bin/nv_hciattach \
 vendor/moto/sunfire/proprietary/bin/nvmm_wmaprodec.axf:system/bin/nvmm_wmaprodec.axf \
 vendor/moto/sunfire/proprietary/bin/remountpds:system/bin/remountpds \
 vendor/moto/sunfire/proprietary/bin/slateipcd:system/bin/slateipcd \
 vendor/moto/sunfire/proprietary/bin/tcmd:system/bin/tcmd \
 vendor/moto/sunfire/proprietary/bin/tegrastats:system/bin/tegrastats \
-vendor/moto/sunfire/proprietary/bin/hciconfig:system/bin/hciconfig \
-vendor/moto/sunfire/proprietary/bin/hcidump:system/bin/hcidump \
-vendor/moto/sunfire/proprietary/bin/hcitool:system/bin/hcitool \
 vendor/moto/sunfire/proprietary/bin/vpnclientpm:system/bin/vpnclientpm
 
 # LIB
 PRODUCT_COPY_FILES += \
-vendor/moto/sunfire/proprietary/lib/libfmradio_jni.so:system/lib/libfmradio_jni.so \
 vendor/moto/sunfire/proprietary/lib/libfmradioplayer.so:system/lib/libfmradioplayer.so \
 vendor/moto/sunfire/proprietary/lib/libnvidia_display_jni.so:system/lib/libnvidia_display_jni.so \
 vendor/moto/sunfire/proprietary/lib/libnvec.so:system/lib/libnvec.so \
