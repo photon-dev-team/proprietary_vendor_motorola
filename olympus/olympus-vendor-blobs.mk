@@ -7,15 +7,15 @@ PRODUCT_COPY_FILES += \
 
 # FINGERPRINT
 PRODUCT_COPY_FILES += \
-    vendor/moto/olympus/proprietary/lib/libAuthUDMDrv_1750A100.so:system/lib/libAuthUDMDrv_1750A100.so \
-    vendor/moto/olympus/proprietary/lib/libam2app.so:system/lib/libam2app.so \
-    vendor/moto/olympus/proprietary/lib/libam2server.so:system/lib/libam2server.so \
-    vendor/moto/olympus/proprietary/bin/am2server:system/bin/am2server \
-    vendor/moto/olympus/proprietary/app/GfxEngine.apk:system/app/GfxEngine.apk \
-    vendor/moto/olympus/proprietary/app/FingerprintSensor.apk:system/app/FingerprintSensor.apk \
-    vendor/moto/olympus/proprietary/etc/am2server.pubkey:system/etc/am2server.pubkey \
-    vendor/moto/olympus/proprietary/etc/tsm.xml:system/etc/tsm.xml \
-    vendor/moto/olympus/proprietary/app/am2app.jar:system/framework/am2app.jar
+#    vendor/moto/olympus/proprietary/lib/libAuthUDMDrv_1750A100.so:system/lib/libAuthUDMDrv_1750A100.so \
+#    vendor/moto/olympus/proprietary/lib/libam2app.so:system/lib/libam2app.so \
+#    vendor/moto/olympus/proprietary/lib/libam2server.so:system/lib/libam2server.so \
+#    vendor/moto/olympus/proprietary/bin/am2server:system/bin/am2server \
+#    vendor/moto/olympus/proprietary/app/GfxEngine.apk:system/app/GfxEngine.apk \
+#    vendor/moto/olympus/proprietary/app/FingerprintSensor.apk:system/app/FingerprintSensor.apk \
+#    vendor/moto/olympus/proprietary/etc/am2server.pubkey:system/etc/am2server.pubkey \
+#    vendor/moto/olympus/proprietary/etc/tsm.xml:system/etc/tsm.xml \
+#    vendor/moto/olympus/proprietary/app/am2app.jar:system/framework/am2app.jar
 
 # HAL
 PRODUCT_COPY_FILES += \
