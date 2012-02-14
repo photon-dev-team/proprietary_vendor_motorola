@@ -145,7 +145,6 @@ PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/etc/be_photo:system/etc/be_photo \
     vendor/moto/sunfire/proprietary/usr/idc/qtouch-touchscreen.idc:system/usr/idc/qtouch-touchscreen.idc \
     vendor/moto/sunfire/proprietary/app/FastDormancy.apk:system/app/FastDormancy.apk \
-    vendor/moto/sunfire/proprietary/app/Usb.apk:system/app/Usb.apk \
     vendor/moto/sunfire/proprietary/app/AudioEffectSettings.apk:system/app/AudioEffectSettings.apk \
     vendor/moto/sunfire/proprietary/app/FaceLock.apk:system/app/FaceLock.apk \
     vendor/moto/sunfire/proprietary/etc/ppp/peers/pppd-ril.options:system/etc/ppp/peers/pppd-ril.options
