@@ -192,16 +192,16 @@ vendor/moto/sunfire/proprietary/lib/libnvidia_display_jni.so:system/lib/libnvidi
 vendor/moto/sunfire/proprietary/lib/libnvec.so:system/lib/libnvec.so \
 vendor/moto/sunfire/proprietary/lib/libnvwinsys.so:system/lib/libnvwinsys.so \
 vendor/moto/sunfire/proprietary/lib/libomx_amrenc_sharedlibrary.so:system/lib/libomx_amrenc_sharedlibrary.so \
-vendor/moto/sunfire/proprietary/lib/libopencore_author.so:system/lib/libopencore_author.so \
-vendor/moto/sunfire/proprietary/lib/libopencore_common.so:system/lib/libopencore_common.so \
-vendor/moto/sunfire/proprietary/lib/libopencore_download.so:system/lib/libopencore_download.so \
-vendor/moto/sunfire/proprietary/lib/libopencore_downloadreg.so:system/lib/libopencore_downloadreg.so \
-vendor/moto/sunfire/proprietary/lib/libopencore_mp4local.so:system/lib/libopencore_mp4local.so \
-vendor/moto/sunfire/proprietary/lib/libopencore_mp4localreg.so:system/lib/libopencore_mp4localreg.so \
-vendor/moto/sunfire/proprietary/lib/libopencore_net_support.so:system/lib/libopencore_net_support.so \
-vendor/moto/sunfire/proprietary/lib/libopencore_player.so:system/lib/libopencore_player.so \
-vendor/moto/sunfire/proprietary/lib/libopencore_rtsp.so:system/lib/libopencore_rtsp.so \
-vendor/moto/sunfire/proprietary/lib/libopencore_rtspreg.so:system/lib/libopencore_rtspreg.so \
+#vendor/moto/sunfire/proprietary/lib/libopencore_author.so:system/lib/libopencore_author.so \
+#vendor/moto/sunfire/proprietary/lib/libopencore_common.so:system/lib/libopencore_common.so \
+#vendor/moto/sunfire/proprietary/lib/libopencore_download.so:system/lib/libopencore_download.so \
+#vendor/moto/sunfire/proprietary/lib/libopencore_downloadreg.so:system/lib/libopencore_downloadreg.so \
+#vendor/moto/sunfire/proprietary/lib/libopencore_mp4local.so:system/lib/libopencore_mp4local.so \
+#vendor/moto/sunfire/proprietary/lib/libopencore_mp4localreg.so:system/lib/libopencore_mp4localreg.so \
+#vendor/moto/sunfire/proprietary/lib/libopencore_net_support.so:system/lib/libopencore_net_support.so \
+#vendor/moto/sunfire/proprietary/lib/libopencore_player.so:system/lib/libopencore_player.so \
+#vendor/moto/sunfire/proprietary/lib/libopencore_rtsp.so:system/lib/libopencore_rtsp.so \
+#vendor/moto/sunfire/proprietary/lib/libopencore_rtspreg.so:system/lib/libopencore_rtspreg.so \
 vendor/moto/sunfire/proprietary/lib/libpixelflinger.so:system/lib/libpixelflinger.so
 
 #-----------------------------------------------------------------------------------------------------
