@@ -33,21 +33,20 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/bin/mot_boot_mode:system/bin/mot_boot_mode \
     vendor/moto/olympus/proprietary/bin/charge_only_mode:system/bin/charge_only_mode \
     vendor/moto/olympus/proprietary/bin/ap_gain.bin:system/bin/ap_gain.bin \
-    vendor/moto/olympus/proprietary/bin/nvrm_daemon:system/bin/nvrm_daemon \
-    vendor/moto/olympus/proprietary/bin/nvrm_avp.axf:system/bin/nvrm_avp.axf \
     vendor/moto/olympus/proprietary/bin/nvddk_audiofx_core.axf:system/bin/nvddk_audiofx_core.axf \
+    vendor/moto/olympus/proprietary/bin/nvmm_service.axf:system/bin/nvmm_service.axf \
+    vendor/moto/olympus/proprietary/bin/nvmm_reference.axf:system/bin/nvmm_reference.axf \
+    vendor/moto/olympus/proprietary/bin/nvmm_manager.axf:system/bin/nvmm_manager.axf \
+    vendor/moto/olympus/proprietary/bin/nvrm_avp.axf:system/bin/nvrm_avp.axf \
     vendor/moto/olympus/proprietary/bin/nvrm_avp.axf:system/bin/nvrm_avp.axf \
     vendor/moto/olympus/proprietary/bin/nvmm_wmadec.axf:system/bin/nvmm_wmadec.axf \
     vendor/moto/olympus/proprietary/bin/nvmm_wavdec.axf:system/bin/nvmm_wavdec.axf \
     vendor/moto/olympus/proprietary/bin/nvmm_vc1dec.axf:system/bin/nvmm_vc1dec.axf \
     vendor/moto/olympus/proprietary/bin/nvmm_sw_mp3dec.axf:system/bin/nvmm_sw_mp3dec.axf \
     vendor/moto/olympus/proprietary/bin/nvmm_sorensondec.axf:system/bin/nvmm_sorensondec.axf \
-    vendor/moto/olympus/proprietary/bin/nvmm_service.axf:system/bin/nvmm_service.axf \
-    vendor/moto/olympus/proprietary/bin/nvmm_reference.axf:system/bin/nvmm_reference.axf \
     vendor/moto/olympus/proprietary/bin/nvmm_mpeg4dec.axf:system/bin/nvmm_mpeg4dec.axf \
     vendor/moto/olympus/proprietary/bin/nvmm_mp3dec.axf:system/bin/nvmm_mp3dec.axf \
     vendor/moto/olympus/proprietary/bin/nvmm_mp2dec.axf:system/bin/nvmm_mp2dec.axf \
-    vendor/moto/olympus/proprietary/bin/nvmm_manager.axf:system/bin/nvmm_manager.axf \
     vendor/moto/olympus/proprietary/bin/nvmm_jpegenc.axf:system/bin/nvmm_jpegenc.axf \
     vendor/moto/olympus/proprietary/bin/nvmm_jpegdec.axf:system/bin/nvmm_jpegdec.axf \
     vendor/moto/olympus/proprietary/bin/nvmm_h264dec.axf:system/bin/nvmm_h264dec.axf \
@@ -121,8 +120,6 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/lib/libnvmm_parser.so:system/lib/libnvmm_parser.so \
     vendor/moto/olympus/proprietary/lib/libnvmm_tracklist.so:system/lib/libnvmm_tracklist.so \
     vendor/moto/olympus/proprietary/lib/libnvmm_video.so:system/lib/libnvmm_video.so \
-    vendor/moto/olympus/proprietary/lib/libnvmm_videorenderer.so:system/lib/libnvmm_videorenderer.so \
-    vendor/moto/olympus/proprietary/lib/libnvmm_vp6_video.so:system/lib/libnvmm_vp6_video.so \
     vendor/moto/olympus/proprietary/lib/libnvmm_writer.so:system/lib/libnvmm_writer.so \
     vendor/moto/olympus/proprietary/lib/libnvmm_service.so:system/lib/libnvmm_service.so \
     vendor/moto/olympus/proprietary/lib/libnvos.so:system/lib/libnvos.so \
@@ -141,17 +138,6 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/lib/libnmea.so:system/lib/libnmea.so \
     vendor/moto/olympus/proprietary/lib/libbattd.so:system/lib/libbattd.so \
     vendor/moto/olympus/proprietary/lib/libnvrm_channel.so:system/lib/libnvrm_channel.so
-
-# VIDEO
-PRODUCT_COPY_FILES += \
-    vendor/moto/olympus/proprietary/lib/libnvomx.so:system/lib/libnvomx.so \
-    vendor/moto/olympus/proprietary/lib/libnvomxilclient.so:system/lib/libnvomxilclient.so \
-    vendor/moto/olympus/proprietary/lib/libomx_aacdec_sharedlibrary.so:system/lib/libomx_aacdec_sharedlibrary.so \
-    vendor/moto/olympus/proprietary/lib/libomx_amrdec_sharedlibrary.so:system/lib/libomx_amrdec_sharedlibrary.so \
-    vendor/moto/olympus/proprietary/lib/libomx_avcdec_sharedlibrary.so:system/lib/libomx_avcdec_sharedlibrary.so \
-    vendor/moto/olympus/proprietary/lib/libomx_m4vdec_sharedlibrary.so:system/lib/libomx_m4vdec_sharedlibrary.so \
-    vendor/moto/olympus/proprietary/lib/libomx_mp3dec_sharedlibrary.so:system/lib/libomx_mp3dec_sharedlibrary.so \
-    vendor/moto/olympus/proprietary/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so
 
 # HDMI
 PRODUCT_COPY_FILES += \
@@ -182,7 +168,32 @@ vendor/moto/sunfire/proprietary/lib/libfmradioplayer.so:system/lib/libfmradiopla
 vendor/moto/sunfire/proprietary/lib/libnvidia_display_jni.so:system/lib/libnvidia_display_jni.so \
 vendor/moto/sunfire/proprietary/lib/libnvec.so:system/lib/libnvec.so \
 vendor/moto/sunfire/proprietary/lib/libnvwinsys.so:system/lib/libnvwinsys.so \
-vendor/moto/sunfire/proprietary/lib/libomx_amrenc_sharedlibrary.so:system/lib/libomx_amrenc_sharedlibrary.so \
+    vendor/moto/olympus/proprietary/bin/nvrm_daemon:system/bin/nvrm_daemon \
+vendor/moto/sunfire/proprietary/lib/libpixelflinger.so:system/lib/libpixelflinger.so
+
+
+
+
+
+
+#-----------------------------------------------------------------------------------------------------
+
+
+# FINGERPRINT
+#PRODUCT_COPY_FILES += \
+#    vendor/moto/olympus/proprietary/lib/libAuthUDMDrv_1750A100.so:system/lib/libAuthUDMDrv_1750A100.so \
+#    vendor/moto/olympus/proprietary/lib/libam2app.so:system/lib/libam2app.so \
+#    vendor/moto/olympus/proprietary/lib/libam2server.so:system/lib/libam2server.so \
+#    vendor/moto/olympus/proprietary/bin/am2server:system/bin/am2server \
+#    vendor/moto/olympus/proprietary/app/GfxEngine.apk:system/app/GfxEngine.apk \
+#    vendor/moto/olympus/proprietary/app/FingerprintSensor.apk:system/app/FingerprintSensor.apk \
+#    vendor/moto/olympus/proprietary/etc/am2server.pubkey:system/etc/am2server.pubkey \
+#    vendor/moto/olympus/proprietary/etc/tsm.xml:system/etc/tsm.xml \
+#    vendor/moto/olympus/proprietary/app/am2app.jar:system/framework/am2app.jar
+
+#extra
+#PRODUCT_COPY_FILES += \
+#vendor/moto/sunfire/proprietary/lib/libomx_amrenc_sharedlibrary.so:system/lib/libomx_amrenc_sharedlibrary.so \
 #vendor/moto/sunfire/proprietary/lib/libopencore_author.so:system/lib/libopencore_author.so \
 #vendor/moto/sunfire/proprietary/lib/libopencore_common.so:system/lib/libopencore_common.so \
 #vendor/moto/sunfire/proprietary/lib/libopencore_download.so:system/lib/libopencore_download.so \
@@ -193,19 +204,13 @@ vendor/moto/sunfire/proprietary/lib/libomx_amrenc_sharedlibrary.so:system/lib/li
 #vendor/moto/sunfire/proprietary/lib/libopencore_player.so:system/lib/libopencore_player.so \
 #vendor/moto/sunfire/proprietary/lib/libopencore_rtsp.so:system/lib/libopencore_rtsp.so \
 #vendor/moto/sunfire/proprietary/lib/libopencore_rtspreg.so:system/lib/libopencore_rtspreg.so \
-vendor/moto/sunfire/proprietary/lib/libpixelflinger.so:system/lib/libpixelflinger.so
-
-#-----------------------------------------------------------------------------------------------------
-
-
-# FINGERPRINT
-PRODUCT_COPY_FILES += \
-#    vendor/moto/olympus/proprietary/lib/libAuthUDMDrv_1750A100.so:system/lib/libAuthUDMDrv_1750A100.so \
-#    vendor/moto/olympus/proprietary/lib/libam2app.so:system/lib/libam2app.so \
-#    vendor/moto/olympus/proprietary/lib/libam2server.so:system/lib/libam2server.so \
-#    vendor/moto/olympus/proprietary/bin/am2server:system/bin/am2server \
-#    vendor/moto/olympus/proprietary/app/GfxEngine.apk:system/app/GfxEngine.apk \
-#    vendor/moto/olympus/proprietary/app/FingerprintSensor.apk:system/app/FingerprintSensor.apk \
-#    vendor/moto/olympus/proprietary/etc/am2server.pubkey:system/etc/am2server.pubkey \
-#    vendor/moto/olympus/proprietary/etc/tsm.xml:system/etc/tsm.xml \
-#    vendor/moto/olympus/proprietary/app/am2app.jar:system/framework/am2app.jar
+#    vendor/moto/olympus/proprietary/lib/libnvmm_videorenderer.so:system/lib/libnvmm_videorenderer.so \
+#    vendor/moto/olympus/proprietary/lib/libnvmm_vp6_video.so:system/lib/libnvmm_vp6_video.so \
+#    vendor/moto/olympus/proprietary/lib/libnvomx.so:system/lib/libnvomx.so \
+#    vendor/moto/olympus/proprietary/lib/libnvomxilclient.so:system/lib/libnvomxilclient.so \
+#    vendor/moto/olympus/proprietary/lib/libomx_aacdec_sharedlibrary.so:system/lib/libomx_aacdec_sharedlibrary.so \
+#    vendor/moto/olympus/proprietary/lib/libomx_amrdec_sharedlibrary.so:system/lib/libomx_amrdec_sharedlibrary.so \
+#    vendor/moto/olympus/proprietary/lib/libomx_avcdec_sharedlibrary.so:system/lib/libomx_avcdec_sharedlibrary.so \
+#    vendor/moto/olympus/proprietary/lib/libomx_m4vdec_sharedlibrary.so:system/lib/libomx_m4vdec_sharedlibrary.so \
+#    vendor/moto/olympus/proprietary/lib/libomx_mp3dec_sharedlibrary.so:system/lib/libomx_mp3dec_sharedlibrary.so \
+#    vendor/moto/olympus/proprietary/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so 

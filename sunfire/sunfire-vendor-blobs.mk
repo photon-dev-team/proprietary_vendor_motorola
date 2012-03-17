@@ -38,6 +38,23 @@ PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/bin/nvmm_service.axf:system/bin/nvmm_service.axf \
     vendor/moto/sunfire/proprietary/bin/nvmm_reference.axf:system/bin/nvmm_reference.axf \
     vendor/moto/sunfire/proprietary/bin/nvmm_manager.axf:system/bin/nvmm_manager.axf \
+    vendor/moto/sunfire/proprietary/bin/nvmm_jpegenc.axf:system/bin/nvmm_jpegenc.axf \
+    vendor/moto/sunfire/proprietary/bin/nvmm_jpegdec.axf:system/bin/nvmm_jpegdec.axf \
+    vendor/moto/sunfire/proprietary/bin/nvmm_h264dec.axf:system/bin/nvmm_h264dec.axf \
+    vendor/moto/sunfire/proprietary/bin/nvmm_audiomixer.axf:system/bin/nvmm_audiomixer.axf \
+    vendor/moto/sunfire/proprietary/bin/nvmm_adtsdec.axf:system/bin/nvmm_adtsdec.axf \
+    vendor/moto/sunfire/proprietary/bin/nvmm_aacdec.axf:system/bin/nvmm_aacdec.axf \
+    vendor/moto/sunfire/proprietary/bin/nvddk_audiofx_transport.axf:system/bin/nvddk_audiofx_transport.axf \
+    vendor/moto/sunfire/proprietary/bin/nvddk_audiofx_core.axf:system/bin/nvddk_audiofx_core.axf \
+    vendor/moto/sunfire/proprietary/bin/nvrm_avp.axf:system/bin/nvrm_avp.axf \
+    vendor/moto/sunfire/proprietary/bin/nvmm_wmadec.axf:system/bin/nvmm_wmadec.axf \
+    vendor/moto/sunfire/proprietary/bin/nvmm_wavdec.axf:system/bin/nvmm_wavdec.axf \
+    vendor/moto/sunfire/proprietary/bin/nvmm_vc1dec.axf:system/bin/nvmm_vc1dec.axf \
+    vendor/moto/sunfire/proprietary/bin/nvmm_sw_mp3dec.axf:system/bin/nvmm_sw_mp3dec.axf \
+    vendor/moto/sunfire/proprietary/bin/nvmm_sorensondec.axf:system/bin/nvmm_sorensondec.axf \
+    vendor/moto/sunfire/proprietary/bin/nvmm_mpeg4dec.axf:system/bin/nvmm_mpeg4dec.axf \
+    vendor/moto/sunfire/proprietary/bin/nvmm_mp3dec.axf:system/bin/nvmm_mp3dec.axf \
+    vendor/moto/sunfire/proprietary/bin/nvmm_mp2dec.axf:system/bin/nvmm_mp2dec.axf \
     vendor/moto/sunfire/proprietary/bin/tund:system/bin/tund \
     vendor/moto/sunfire/proprietary/bin/bt_init:system/bin/bt_init \
     vendor/moto/sunfire/proprietary/bin/bt_downloader:system/bin/bt_downloader \
@@ -82,7 +99,7 @@ vendor/moto/sunfire/proprietary/lib/libfmradioplayer.so:system/lib/libfmradiopla
 vendor/moto/sunfire/proprietary/lib/libnvidia_display_jni.so:system/lib/libnvidia_display_jni.so \
 vendor/moto/sunfire/proprietary/lib/libnvec.so:system/lib/libnvec.so \
 vendor/moto/sunfire/proprietary/lib/libnvwinsys.so:system/lib/libnvwinsys.so \
-
+    vendor/moto/olympus/proprietary/bin/nvrm_daemon:system/bin/nvrm_daemon \
 vendor/moto/sunfire/proprietary/lib/libpixelflinger.so:system/lib/libpixelflinger.so
 
 #-----------------------------------------------------------------------------------------------------
@@ -156,7 +173,13 @@ PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/lib/libbattd.so:system/lib/libbattd.so \
     vendor/moto/sunfire/proprietary/lib/libnvrm_channel.so:system/lib/libnvrm_channel.so
 
-# VIDEO
+# HDMI
+PRODUCT_COPY_FILES += \
+    vendor/moto/sunfire/proprietary/lib/libmirrorjni.so:system/lib/libmirrorjni.so \
+    vendor/moto/sunfire/proprietary/app/FileManager.apk:system/app/FileManager2.apk
+
+
+# extra
 #PRODUCT_COPY_FILES += \
 #    vendor/moto/sunfire/proprietary/lib/libnvomx.so:system/lib/libnvomx.so \
 #    vendor/moto/sunfire/proprietary/lib/libnvomxilclient.so:system/lib/libnvomxilclient.so \
@@ -175,35 +198,15 @@ PRODUCT_COPY_FILES += \
 #    vendor/moto/sunfire/proprietary/lib/libopencore_player.so:system/lib/libopencore_player.so \
 #    vendor/moto/sunfire/proprietary/lib/libopencore_rtsp.so:system/lib/libopencore_rtsp.so \
 #    vendor/moto/sunfire/proprietary/lib/libopencore_rtspreg.so:system/lib/libopencore_rtspreg.so \
-#    vendor/moto/sunfire/proprietary/bin/nvmm_jpegenc.axf:system/bin/nvmm_jpegenc.axf \
-#    vendor/moto/sunfire/proprietary/bin/nvmm_jpegdec.axf:system/bin/nvmm_jpegdec.axf \
-#    vendor/moto/sunfire/proprietary/bin/nvmm_h264dec.axf:system/bin/nvmm_h264dec.axf \
-#    vendor/moto/sunfire/proprietary/bin/nvmm_audiomixer.axf:system/bin/nvmm_audiomixer.axf \
-#    vendor/moto/sunfire/proprietary/bin/nvmm_adtsdec.axf:system/bin/nvmm_adtsdec.axf \
-#    vendor/moto/sunfire/proprietary/bin/nvmm_aacdec.axf:system/bin/nvmm_aacdec.axf \
-#    vendor/moto/sunfire/proprietary/bin/nvddk_audiofx_transport.axf:system/bin/nvddk_audiofx_transport.axf \
-#    vendor/moto/sunfire/proprietary/bin/nvddk_audiofx_core.axf:system/bin/nvddk_audiofx_core.axf \
-#    vendor/moto/sunfire/proprietary/lib/libnvmm_videorenderer.so:system/lib/libnvmm_videorenderer.so \
-#    vendor/moto/sunfire/proprietary/bin/nvrm_avp.axf:system/bin/nvrm_avp.axf \
-#    vendor/moto/sunfire/proprietary/bin/nvmm_wmadec.axf:system/bin/nvmm_wmadec.axf \
-#    vendor/moto/sunfire/proprietary/bin/nvmm_wavdec.axf:system/bin/nvmm_wavdec.axf \
-#    vendor/moto/sunfire/proprietary/bin/nvmm_vc1dec.axf:system/bin/nvmm_vc1dec.axf \
-#    vendor/moto/sunfire/proprietary/bin/nvmm_sw_mp3dec.axf:system/bin/nvmm_sw_mp3dec.axf \
-#    vendor/moto/sunfire/proprietary/bin/nvmm_sorensondec.axf:system/bin/nvmm_sorensondec.axf \
-#    vendor/moto/sunfire/proprietary/bin/nvmm_mpeg4dec.axf:system/bin/nvmm_mpeg4dec.axf \
+
 #    vendor/moto/sunfire/proprietary/lib/libnvmm_vp6_video.so:system/lib/libnvmm_vp6_video.so \
-#    vendor/moto/sunfire/proprietary/bin/nvmm_mp3dec.axf:system/bin/nvmm_mp3dec.axf \
-#    vendor/moto/sunfire/proprietary/bin/nvmm_mp2dec.axf:system/bin/nvmm_mp2dec.axf \
+#    vendor/moto/sunfire/proprietary/lib/libnvmm_videorenderer.so:system/lib/libnvmm_videorenderer.so \
 #    vendor/moto/sunfire/proprietary/bin/nvrm_daemon:system/bin/nvrm_daemon \
 #    vendor/moto/sunfire/proprietary/bin/nvrm_avp.axf:system/bin/nvrm_avp.axf \
 #    vendor/moto/sunfire/proprietary/lib/libomx_amrenc_sharedlibrary.so:system/lib/libomx_amrenc_sharedlibrary.so \
 #    vendor/moto/sunfire/proprietary/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so
     
 
-# HDMI
-PRODUCT_COPY_FILES += \
-    vendor/moto/sunfire/proprietary/lib/libmirrorjni.so:system/lib/libmirrorjni.so \
-    vendor/moto/sunfire/proprietary/app/FileManager.apk:system/app/FileManager2.apk
 
 
 #-----------------------------------------------------------------------------------------------------
