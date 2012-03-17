@@ -155,6 +155,8 @@ PRODUCT_COPY_FILES += \
     vendor/moto/sunfire/proprietary/lib/libnvmm_tracklist.so:system/lib/libnvmm_tracklist.so \
     vendor/moto/sunfire/proprietary/lib/libnvmm_writer.so:system/lib/libnvmm_writer.so \
     vendor/moto/sunfire/proprietary/lib/libnvmm_service.so:system/lib/libnvmm_service.so \
+    vendor/moto/sunfire/proprietary/lib/libnvomx.so:system/lib/libnvomx.so \
+    vendor/moto/sunfire/proprietary/lib/libnvomxilclient.so:system/lib/libnvomxilclient.so \
     vendor/moto/sunfire/proprietary/lib/libnvos.so:system/lib/libnvos.so \
     vendor/moto/sunfire/proprietary/lib/libnvodm_query.so:system/lib/libnvodm_query.so \
     vendor/moto/sunfire/proprietary/lib/libnvodm_misc.so:system/lib/libnvodm_misc.so \
@@ -181,8 +183,7 @@ PRODUCT_COPY_FILES += \
 
 # extra
 #PRODUCT_COPY_FILES += \
-#    vendor/moto/sunfire/proprietary/lib/libnvomx.so:system/lib/libnvomx.so \
-#    vendor/moto/sunfire/proprietary/lib/libnvomxilclient.so:system/lib/libnvomxilclient.so \
+
 #    vendor/moto/sunfire/proprietary/lib/libomx_aacdec_sharedlibrary.so:system/lib/libomx_aacdec_sharedlibrary.so \
 #    vendor/moto/sunfire/proprietary/lib/libomx_amrdec_sharedlibrary.so:system/lib/libomx_amrdec_sharedlibrary.so \
 #    vendor/moto/sunfire/proprietary/lib/libomx_avcdec_sharedlibrary.so:system/lib/libomx_avcdec_sharedlibrary.so \

@@ -113,6 +113,8 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/lib/libnvodm_dtvtuner.so:system/lib/libnvodm_dtvtuner.so \
     vendor/moto/olympus/proprietary/lib/libnvdispatch_helper.so:system/lib/libnvdispatch_helper.so \
     vendor/moto/olympus/proprietary/lib/libcgdrv.so:system/lib/libcgdrv.so \
+    vendor/moto/olympus/proprietary/lib/libnvomx.so:system/lib/libnvomx.so \
+    vendor/moto/olympus/proprietary/lib/libnvomxilclient.so:system/lib/libnvomxilclient.so \
     vendor/moto/olympus/proprietary/lib/libnvmm_audio.so:system/lib/libnvmm_audio.so \
     vendor/moto/olympus/proprietary/lib/libnvmm_contentpipe.so:system/lib/libnvmm_contentpipe.so \
     vendor/moto/olympus/proprietary/lib/libnvmm_image.so:system/lib/libnvmm_image.so \
@@ -206,8 +208,6 @@ vendor/moto/sunfire/proprietary/lib/libpixelflinger.so:system/lib/libpixelflinge
 #vendor/moto/sunfire/proprietary/lib/libopencore_rtspreg.so:system/lib/libopencore_rtspreg.so \
 #    vendor/moto/olympus/proprietary/lib/libnvmm_videorenderer.so:system/lib/libnvmm_videorenderer.so \
 #    vendor/moto/olympus/proprietary/lib/libnvmm_vp6_video.so:system/lib/libnvmm_vp6_video.so \
-#    vendor/moto/olympus/proprietary/lib/libnvomx.so:system/lib/libnvomx.so \
-#    vendor/moto/olympus/proprietary/lib/libnvomxilclient.so:system/lib/libnvomxilclient.so \
 #    vendor/moto/olympus/proprietary/lib/libomx_aacdec_sharedlibrary.so:system/lib/libomx_aacdec_sharedlibrary.so \
 #    vendor/moto/olympus/proprietary/lib/libomx_amrdec_sharedlibrary.so:system/lib/libomx_amrdec_sharedlibrary.so \
 #    vendor/moto/olympus/proprietary/lib/libomx_avcdec_sharedlibrary.so:system/lib/libomx_avcdec_sharedlibrary.so \
