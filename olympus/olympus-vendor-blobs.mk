@@ -5,18 +5,6 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/lib/libaudio.so:system/lib/libaudio.so \
     vendor/moto/olympus/proprietary/lib/libaudiopolicy.so:system/lib/libaudiopolicy.so
 
-# FINGERPRINT
-PRODUCT_COPY_FILES += \
-#    vendor/moto/olympus/proprietary/lib/libAuthUDMDrv_1750A100.so:system/lib/libAuthUDMDrv_1750A100.so \
-#    vendor/moto/olympus/proprietary/lib/libam2app.so:system/lib/libam2app.so \
-#    vendor/moto/olympus/proprietary/lib/libam2server.so:system/lib/libam2server.so \
-#    vendor/moto/olympus/proprietary/bin/am2server:system/bin/am2server \
-#    vendor/moto/olympus/proprietary/app/GfxEngine.apk:system/app/GfxEngine.apk \
-#    vendor/moto/olympus/proprietary/app/FingerprintSensor.apk:system/app/FingerprintSensor.apk \
-#    vendor/moto/olympus/proprietary/etc/am2server.pubkey:system/etc/am2server.pubkey \
-#    vendor/moto/olympus/proprietary/etc/tsm.xml:system/etc/tsm.xml \
-#    vendor/moto/olympus/proprietary/app/am2app.jar:system/framework/am2app.jar
-
 # HAL
 PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/lib/hw/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \
@@ -177,7 +165,9 @@ PRODUCT_COPY_FILES += \
 # BIN 
 
 PRODUCT_COPY_FILES += \
+vendor/moto/sunfire/proprietary/bin/fmradioserver:system/bin/fmradioserver \
 vendor/moto/sunfire/proprietary/bin/memtest_mode:system/bin/memtest_mode \
+vendor/moto/sunfire/proprietary/bin/nv_hciattach:system/bin/nv_hciattach \
 vendor/moto/sunfire/proprietary/bin/nvmm_wmaprodec.axf:system/bin/nvmm_wmaprodec.axf \
 vendor/moto/sunfire/proprietary/bin/remountpds:system/bin/remountpds \
 vendor/moto/sunfire/proprietary/bin/slateipcd:system/bin/slateipcd \
@@ -187,6 +177,7 @@ vendor/moto/sunfire/proprietary/bin/vpnclientpm:system/bin/vpnclientpm
 
 # LIB
 PRODUCT_COPY_FILES += \
+vendor/moto/sunfire/proprietary/lib/libfmradio_jni.so:system/lib/libfmradio_jni.so \
 vendor/moto/sunfire/proprietary/lib/libfmradioplayer.so:system/lib/libfmradioplayer.so \
 vendor/moto/sunfire/proprietary/lib/libnvidia_display_jni.so:system/lib/libnvidia_display_jni.so \
 vendor/moto/sunfire/proprietary/lib/libnvec.so:system/lib/libnvec.so \
@@ -205,3 +196,16 @@ vendor/moto/sunfire/proprietary/lib/libomx_amrenc_sharedlibrary.so:system/lib/li
 vendor/moto/sunfire/proprietary/lib/libpixelflinger.so:system/lib/libpixelflinger.so
 
 #-----------------------------------------------------------------------------------------------------
+
+
+# FINGERPRINT
+PRODUCT_COPY_FILES += \
+#    vendor/moto/olympus/proprietary/lib/libAuthUDMDrv_1750A100.so:system/lib/libAuthUDMDrv_1750A100.so \
+#    vendor/moto/olympus/proprietary/lib/libam2app.so:system/lib/libam2app.so \
+#    vendor/moto/olympus/proprietary/lib/libam2server.so:system/lib/libam2server.so \
+#    vendor/moto/olympus/proprietary/bin/am2server:system/bin/am2server \
+#    vendor/moto/olympus/proprietary/app/GfxEngine.apk:system/app/GfxEngine.apk \
+#    vendor/moto/olympus/proprietary/app/FingerprintSensor.apk:system/app/FingerprintSensor.apk \
+#    vendor/moto/olympus/proprietary/etc/am2server.pubkey:system/etc/am2server.pubkey \
+#    vendor/moto/olympus/proprietary/etc/tsm.xml:system/etc/tsm.xml \
+#    vendor/moto/olympus/proprietary/app/am2app.jar:system/framework/am2app.jar
