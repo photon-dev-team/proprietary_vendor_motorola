@@ -70,7 +70,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/bin/pppd-ril:system/bin/pppd-ril \
     vendor/moto/olympus/proprietary/bin/chat-ril:system/bin/chat-ril \
     vendor/moto/olympus/proprietary/bin/ftmipcd:system/bin/ftmipcd \
-    vendor/moto/sunfire/proprietary/app/Usb.apk:system/app/Usb.apk \
+    vendor/moto/olympus/proprietary/app/Usb.apk:system/app/Usb.apk \
     vendor/moto/olympus/proprietary/bin/touchpad:system/bin/touchpad
 
 # Wifi/bt firmware
