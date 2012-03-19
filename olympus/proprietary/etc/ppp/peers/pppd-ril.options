@@ -3,6 +3,7 @@ debug
 noauth
 defaultroute
 usepeerdns
+mtu 1472
 connect-delay 1000
 # Don't remove the user/password lines.  They are required to make PPPD authenticate itself with
 # the BP when doing Simple IP (SIP).  The BP will replace the user/password strings with the correct
@@ -17,4 +18,3 @@ ipcp-max-failure 30
 ipcp-max-terminate 10
 novj
 linkname ril
-mtu 1430

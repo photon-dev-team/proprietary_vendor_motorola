@@ -70,9 +70,11 @@ PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/bin/pppd-ril:system/bin/pppd-ril \
     vendor/moto/olympus/proprietary/bin/chat-ril:system/bin/chat-ril \
     vendor/moto/olympus/proprietary/bin/ftmipcd:system/bin/ftmipcd \
+    vendor/moto/sunfire/proprietary/app/Usb.apk:system/app/Usb.apk \
     vendor/moto/olympus/proprietary/bin/touchpad:system/bin/touchpad
 
 # Wifi/bt firmware
+
 PRODUCT_COPY_FILES += \
     vendor/moto/olympus/proprietary/etc/wl/nvram.txt:system/etc/wl/nvram.txt \
     vendor/moto/olympus/proprietary/etc/wl/sdio-ag-cdc-11n-mfgtest-roml-seqcmds.bin:system/etc/wl/sdio-ag-cdc-11n-mfgtest-roml-seqcmds.bin \
@@ -175,7 +177,26 @@ vendor/moto/sunfire/proprietary/lib/libpixelflinger.so:system/lib/libpixelflinge
 
 
 
-
+#extra
+PRODUCT_COPY_FILES += \
+    vendor/moto/sunfire/proprietary/lib/libomx_amrenc_sharedlibrary.so:system/lib/libomx_amrenc_sharedlibrary.so \
+    vendor/moto/sunfire/proprietary/lib/libopencore_author.so:system/lib/libopencore_author.so \
+    vendor/moto/sunfire/proprietary/lib/libopencore_common.so:system/lib/libopencore_common.so \
+    vendor/moto/sunfire/proprietary/lib/libopencore_download.so:system/lib/libopencore_download.so \
+    vendor/moto/sunfire/proprietary/lib/libopencore_downloadreg.so:system/lib/libopencore_downloadreg.so \
+    vendor/moto/sunfire/proprietary/lib/libopencore_mp4local.so:system/lib/libopencore_mp4local.so \
+    vendor/moto/sunfire/proprietary/lib/libopencore_mp4localreg.so:system/lib/libopencore_mp4localreg.so \
+    vendor/moto/sunfire/proprietary/lib/libopencore_net_support.so:system/lib/libopencore_net_support.so \
+    vendor/moto/sunfire/proprietary/lib/libopencore_player.so:system/lib/libopencore_player.so \
+    vendor/moto/sunfire/proprietary/lib/libopencore_rtsp.so:system/lib/libopencore_rtsp.so \
+    vendor/moto/sunfire/proprietary/lib/libopencore_rtspreg.so:system/lib/libopencore_rtspreg.so \
+    vendor/moto/olympus/proprietary/lib/libnvmm_videorenderer.so:system/lib/libnvmm_videorenderer.so \
+    vendor/moto/olympus/proprietary/lib/libnvmm_vp6_video.so:system/lib/libnvmm_vp6_video.so \
+    vendor/moto/olympus/proprietary/lib/libomx_aacdec_sharedlibrary.so:system/lib/libomx_aacdec_sharedlibrary.so \
+    vendor/moto/olympus/proprietary/lib/libomx_amrdec_sharedlibrary.so:system/lib/libomx_amrdec_sharedlibrary.so \
+    vendor/moto/olympus/proprietary/lib/libomx_avcdec_sharedlibrary.so:system/lib/libomx_avcdec_sharedlibrary.so \
+    vendor/moto/olympus/proprietary/lib/libomx_m4vdec_sharedlibrary.so:system/lib/libomx_m4vdec_sharedlibrary.so \#    vendor/moto/olympus/proprietary/lib/libomx_mp3dec_sharedlibrary.so:system/lib/libomx_mp3dec_sharedlibrary.so \
+    vendor/moto/olympus/proprietary/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so 
 
 
 #-----------------------------------------------------------------------------------------------------
@@ -193,24 +214,4 @@ vendor/moto/sunfire/proprietary/lib/libpixelflinger.so:system/lib/libpixelflinge
 #    vendor/moto/olympus/proprietary/etc/tsm.xml:system/etc/tsm.xml \
 #    vendor/moto/olympus/proprietary/app/am2app.jar:system/framework/am2app.jar
 
-#extra
-#PRODUCT_COPY_FILES += \
-#vendor/moto/sunfire/proprietary/lib/libomx_amrenc_sharedlibrary.so:system/lib/libomx_amrenc_sharedlibrary.so \
-#vendor/moto/sunfire/proprietary/lib/libopencore_author.so:system/lib/libopencore_author.so \
-#vendor/moto/sunfire/proprietary/lib/libopencore_common.so:system/lib/libopencore_common.so \
-#vendor/moto/sunfire/proprietary/lib/libopencore_download.so:system/lib/libopencore_download.so \
-#vendor/moto/sunfire/proprietary/lib/libopencore_downloadreg.so:system/lib/libopencore_downloadreg.so \
-#vendor/moto/sunfire/proprietary/lib/libopencore_mp4local.so:system/lib/libopencore_mp4local.so \
-#vendor/moto/sunfire/proprietary/lib/libopencore_mp4localreg.so:system/lib/libopencore_mp4localreg.so \
-#vendor/moto/sunfire/proprietary/lib/libopencore_net_support.so:system/lib/libopencore_net_support.so \
-#vendor/moto/sunfire/proprietary/lib/libopencore_player.so:system/lib/libopencore_player.so \
-#vendor/moto/sunfire/proprietary/lib/libopencore_rtsp.so:system/lib/libopencore_rtsp.so \
-#vendor/moto/sunfire/proprietary/lib/libopencore_rtspreg.so:system/lib/libopencore_rtspreg.so \
-#    vendor/moto/olympus/proprietary/lib/libnvmm_videorenderer.so:system/lib/libnvmm_videorenderer.so \
-#    vendor/moto/olympus/proprietary/lib/libnvmm_vp6_video.so:system/lib/libnvmm_vp6_video.so \
-#    vendor/moto/olympus/proprietary/lib/libomx_aacdec_sharedlibrary.so:system/lib/libomx_aacdec_sharedlibrary.so \
-#    vendor/moto/olympus/proprietary/lib/libomx_amrdec_sharedlibrary.so:system/lib/libomx_amrdec_sharedlibrary.so \
-#    vendor/moto/olympus/proprietary/lib/libomx_avcdec_sharedlibrary.so:system/lib/libomx_avcdec_sharedlibrary.so \
-#    vendor/moto/olympus/proprietary/lib/libomx_m4vdec_sharedlibrary.so:system/lib/libomx_m4vdec_sharedlibrary.so \
-#    vendor/moto/olympus/proprietary/lib/libomx_mp3dec_sharedlibrary.so:system/lib/libomx_mp3dec_sharedlibrary.so \
-#    vendor/moto/olympus/proprietary/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so 
+
