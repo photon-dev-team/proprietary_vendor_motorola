@@ -1,11 +1,12 @@
-# SMR 08/30/11 Draft 9
+# SMR 3/18/10
 # $Copyright (C) 2008 Broadcom Corporation$
 # $id$
 
 sromrev=3
 vendid=0x14e4
-devid=0x432f
-boardtype=0x4b9
+devid=0x432e
+# board type
+boardtype=0x4ff
 
 # board revision 1.0
 boardrev=0x10
@@ -18,22 +19,40 @@ boardflags=0x200
 xtalfreq=38400
 
 aa2g=1
-aa5g=0
+aa5g=1
+
 ag0=2
 
 # 11g paparams
-pa0b0=5521
-pa0b1=64285
-pa0b2=65226
+pa0b0=5422
+pa0b1=64407
+pa0b2=65307
 pa0itssit=62
-pa0maxpwr=60
-ofdmpo=0x66666666
-mcs2gpo0=0x7777
-mcs2gpo1=0x7777
+pa0maxpwr=70
+ofdmpo=0x66661111
+mcs2gpo0=0x7555
+mcs2gpo1=0xA777
 
 # sel = 1 : 20% evm  sel = 2 : 27% evm  sel = 3 : 16% evm
 cckdigfilttype=0
 ofdmdigfilttype=1
+
+# 11a paparams lowband
+pa1lob0=5670
+pa1lob1=64146
+pa1lob2=65183
+# paparams midband
+pa1b0=5380
+pa1b1=64188
+pa1b2=65155
+#paparams high band
+pa1hib0=5517
+pa1hib1=64183
+pa1hib2=65182
+pa1itssit=62
+pa1maxpwr=46
+opo=0
+mcs5gpo=0x40000000
 
 # 11g rssi params
 rssismf2g=0xa
@@ -41,12 +60,19 @@ rssismc2g=0xb
 rssisav2g=0x3
 bxa2g=0
 
+# 11a rssi params
+rssismf5g=0xa
+rssismc5g=0xa
+rssisav5g=0x3
+bxa2g=0
+
 # country code
-ccode=Q1
-regrev=5
+ccode=US 
 cctl=0x0
+regrev=69
 
 rxpo2g=0
+rxpo5g=0
 
 
 boardnum=2048
@@ -60,6 +86,9 @@ otpimagesize=182
 
 # wlan-bt coex parameters
 btc_params70=0x32
+btc_params99=0x28
+
+
 
 #sd_gpout=0
 #sd_gpval=0
